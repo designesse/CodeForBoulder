@@ -1,0 +1,256 @@
+---
+---
+
+// Potential pictures
+// https://www.flickr.com/photos/sypsyn/15367072143/in/photolist-ppWgaH-8jG1St-iTHaSg-6qm9Hf-8yTZK3-72Puba-e1iRsC-coALLW-o8SFZr-ot2odp-prvTFq-pa4zVP-prxmPK-pa3jSg-o3YyXM-oaf2nq-oTEnvz-prxmJ4-8dicCR-a9qYsA-9VkfZk-nQPTPF-o8dQX9-3Hem5n-cinUVA-2E3Qtu-paSWCR-p97zxJ-2DYA36-8LHHJU-G19veR-8AudpH-cinVeE-cinVP1-chP3cs-chdedU-chP3V9-9VkfFz-ciHHiY-9Vdr4P-ciHEHW-chdiQy-chdipC-a3MVmS-a9rZwE-a9s2Y1-a9pe6H-9WvADV-ctiiZU-ctihFs
+// https://www.flickr.com/photos/thelightningman/6203824260/in/photolist-asddPf-Q34aFf-F4aAL1-NnQDWL-Pu5ZM7-gv9iA-NumUAm-qquU7g-L1pefJ-pVBidD-e1FEfU-br4Ui9-HPJAjw-DkFSZS-QNaZgE-Ju1qVU-8At8Bc-RbVPye-asgc2B-Q5vZCK-oJv3PS-dkFkEe-LEi9C3-aVyLLr-7raayG-aE62YM-GT58dY-N2HGQV-LPSwtT-9kAvfS-EDt5HP-qnVgUy-u2XVdL-pq3rZ4-L1oneb-qqmwt5-G3a9qY-F2ym5R-bECdWM-krz7EQ-KAVTKS-cuioyL-p2ouHq-vFEQ93-93HYKF-MRN3F7-pRyB5s-LPZdeh-6Q7rJn-9RcwPu/
+
+$contrast-color: #ebdcca;
+$text-color: #815155;
+$dark-text-color: #573739;
+$light-text-color: #a57075;
+$white-color: #fff;
+$black-color: #000;
+
+body {
+	color: $text-color;
+	font-size: 20px;
+	font-family: sans-serif;
+    margin: 0;
+}
+
+a:hover { color: $light-text-color; }
+a:visited { color: $dark-text-color; }
+a.view { 
+    background-color: #ebdcca;
+	display: inline-block;
+    font-size: .9em;
+    font-weight: bold;
+	margin: 1em 0;
+    padding: .5em;
+	text-transform: uppercase;
+
+	&::after {
+		content: " >";
+	}
+}
+
+header {
+	background-color: $white-color;
+	border-bottom: 3px solid $light-text-color;
+
+	nav { float: right; }
+
+	ol {
+		margin-top: 1.6em;
+
+		li {
+			display: inline;
+
+			a {
+				color: $text-color;
+			    font-weight: bold;
+	    		margin-right: 1em;
+				text-decoration: none;
+	    		text-transform: uppercase;
+			}
+		}
+	}
+
+
+}
+
+#intro {
+	h1 { color: black; }
+	p { 
+		font-size: 1.1em;
+		font-weight: bold; 
+	}
+}	
+
+footer {
+	background-color: $contrast-color;
+	border-top: 3px solid $light-text-color;
+    overflow: hidden;
+    padding-bottom: 3em;
+
+	div {
+	    float: left;
+	    display: inline-block;
+	    text-align: center;
+	    width: 33%;
+	}
+
+	li { display: block; }
+
+	ol {
+	    -webkit-padding-start: 0;
+	}
+}
+
+.menu-logo { 
+	margin: 1em;
+	width: 120px; 
+}
+
+section { padding: 1em 7em; }
+p + ul { margin-top: -0.8em; }
+.right-sidebar {
+    float: right;
+    font-size: .9em;
+    margin-left: 1.5em;
+    width: 40%;
+}
+
+h2 {
+    margin-bottom: 1.5em;
+    margin-top: 2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#intro {
+	background-image: url("{{ site.url }}/_pages/boulder-mountains-houses.jpg");
+    background-position: center center;
+	background-repeat: no-repeat;
+	padding: 3em;
+	position: relative;
+
+	#slogan, p {
+		background: rgba(255, 255, 255, .8);
+		margin: 1em auto;
+		padding: 1em;
+	}
+
+	#slogan {
+		width: 35%;
+
+		h1 {
+			text-align: center;
+		}
+
+		img { 
+			display: block; 
+			width: 100%;
+		}
+	}
+	
+	p { width: 70%; }
+ }
+
+ #contact-us { margin-bottom: 3em; }
+
+ a.background-caption {
+ 	bottom: 0;
+ 	color: #ccc;
+ 	font-size: .8em;
+ 	position: absolute; 
+ 	right: 0; 
+ }
+
+.box {
+ 	background-color: $contrast-color;
+ 	padding: 1em;
+
+ 	h3 {
+	    -webkit-margin-before: 0;
+	    color: $dark-text-color;
+	    font-size: 1.1em;
+ 	}	
+ }
+
+img {
+	&.inline { 
+		&.meetup {
+			height: 35px;
+		    margin-bottom: -.5em;
+		    margin-left: .8em;
+		}
+		&.slack {
+			height: 50px;
+		    margin-bottom: -.77em;
+	    	margin-left: .1em;
+		}
+		&.github {
+			height: 80px;
+		    margin-bottom: -2em;
+		    margin-left: .7em;
+	    	margin-top: 1em;
+		}
+	}
+
+	&.left-half {
+		float: left;
+		margin-right: 1em;
+		width: 45%;
+	}
+}
+
+.inline, { display: inline; }
+.half { width: 50%; }
+.left { float: left; }
+.margin-top { margin-top: 1em; }
+
+#events {
+	div {
+		border-top: 3px solid $light-text-color;
+	    margin-bottom: 1.5em;
+	}
+
+	div:first-child {
+		border: none;
+	}
+}
+
+#meetup-events ol {
+	-webkit-margin-before: 0;
+    -webkit-padding-start: 0;
+	list-style-type: none;
+
+	li {
+		margin: .7em 0;
+
+		a { 
+			color: $text-color;
+			text-decoration: none;
+		}
+
+		span {
+			display: block;
+
+			&.event-name {
+			    font-weight: bold;
+    			text-transform: uppercase;
+    			font-size: .9em;
+			}
+
+			&.event-time, &.event-location {
+				color: $light-text-color;
+			}
+		}
+	}
+ }
+
+ #projects ul {
+ 	-webkit-padding-start: 0px;
+
+ 	h4 {
+	    -webkit-margin-after: 0;
+	    -webkit-margin-before: 0;
+
+	    &.inline {
+	    	display: inline;
+
+	    	&::after {
+		    	content: ": ";
+		    	color: $text-color;
+	    	}
+	    }
+ 	}
+
+ 	li {
+ 		list-style-type: none;
+		margin-bottom: 2em;
+ 		overflow: hidden;
+ 	}
+ }

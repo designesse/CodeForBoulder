@@ -1,0 +1,21 @@
+[
+	{
+	  	"pictureLink": "_pages/boulder-mountains-houses.jpg",
+		"title": "C3PO",
+		"description": "Display construction activities.",
+		"team": ["Don", "Dan"],
+		"partner":"upcoming",
+		"stack": "Node JS",
+		"repoLink": "https://github.com/CodeForBoulder/c3po"
+	},
+	{
+	  	"pictureLink": "_pages/boulder-mountains-houses.jpg",
+		"title": "Code for Boulder",
+		"description":"Rebuilt/Rebrand CfB website.",
+		"team" : ["Malina"],
+		"partner":"upcoming",
+		"stack": "Jekyll",
+		"repoLink": "github.com/CodeForBoulder/CfB-Website-New",
+		"needed": "Contructive feedback on website."
+	}
+]

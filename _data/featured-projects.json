@@ -1,0 +1,11 @@
+[
+	{
+	  	"pictureLink": "_pages/boulder-mountains-houses.jpg",
+		"title": "Alley Art Amazin'",
+		"description": "The otherwise ordinary alleyways of Lafayette have been turned into galleries of public art through the Alley Art Amazin’ program.",
+		"team": ["Elizabeth", "Tif"],
+		"partner":"City of Lafayette",
+		"stack": "WordPress",
+		"liveLink": "http://alleyartamazin.com/"
+	}
+]

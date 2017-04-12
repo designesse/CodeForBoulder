@@ -13,16 +13,17 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@domain.com
+title: Code for Boulder
+email: hi@codeforboulder.org
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Enabling community members to collaboratively solve local problems with technology. 
+  We are community organizers, subject-matter experts, designers, technologists, UX/UI experts, interested residents, 
+  and more who are working for a better Boulder, a better America and a better tomorrow.
+  We are the Boulder brigade of Code for America, a non-partisan, non-political organization working to create low-risk settings 
+  for innovation between citizens and government.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://designesse.github.io/codeforboulder.org/" # the base hostname & protocol for your site, e.g. http://example.com
+logo: "/assets/img/CodeForBoulder-Logo-with-Name.png"
 
 # Build settings
 markdown: kramdown
@@ -31,4 +32,12 @@ gems:
   - jekyll-feed
 exclude:
   - Gemfile
-  - Gemfile.lock
+  - Gemfile.lo
+include: ["_pages"]
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+sass:
+  sass_dir: assets/_sass

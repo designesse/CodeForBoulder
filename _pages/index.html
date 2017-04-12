@@ -1,0 +1,200 @@
+---
+title: Code for Boulder
+permalink: /
+layout: default
+---
+
+<section id="intro">
+	<div id="slogan">
+		<img src="{{ site.url }}{{ site.logo }}"/>
+		<h1>Enabling community members to collaboratively solve local problems with technology.</h1>
+	</div>
+
+	<p>We are community organizers, subject-matter experts, designers, technologists, UX/UI experts, interested residents, and more who are working for a better Boulder, a better America and a better tomorrow.</p>
+
+	<p>As the Boulder brigade of <a href="https://www.codeforamerica.org/">Code for America</a>, we are a non-partisan, non-political organization working to create low-risk settings for innovation between citizens and government.</p>
+	<a class="background-caption"href="https://www.flickr.com/photos/sypsyn/15367072143/sizes/k/">Photo by Bradley Huchteman</a>
+</section>
+
+<section id="join-us">
+	<h2>Join us</h2>
+
+	<div id="events" class="right-sidebar box">
+		<div id="meetup-events">
+			<h3 class="inline"><a href="https://www.meetup.com/CodeForBoulder/">
+				Meet us at a<img class="inline meetup" alt="Meetup" src="https://secure.meetup.com/s/img/0/logo/svg/logo--script.svg">
+			</a></h3>
+			<ol>
+				<li> We meet every Wednesday at 6:30pm for Project evaluation or Code for Boulder Project.</li>
+			</ol>
+		</div>
+		<div id="slack-events">
+			<h3 class="inline"><a href="https://codeforboulder.herokuapp.com/">
+				Discuss with us on<img class="inline slack" alt="Slack" src="{{ site.url }}/assets/img/Slack_RGB.svg">
+			</a></h3>
+		</div>
+		<div id="github-events">
+			<h3 class="inline"><a href="https://github.com/CodeForBoulder">
+				Help us build projects on<img class="inline github" alt="Github" src="{{ site.url }}/assets/img/github-logo.png">
+			</a></h3>
+		</div>		
+	</div>
+
+	<p>Are you passionate about a local cause? Do you have skills that you want to learn or apply to build digital products that can benefit your community?
+	If you answered yes to any of those questions, then you are already on your way to become a valuable member of Code for Boulder.</p>
+	<p>There are multiple ways members can get involved including but not limited to:</p>
+	<ul>
+		<li>Pitching idea(s)</li>
+		<li>Using new/current skills to build a project within a team</li>
+		<li>Hosting a workshop</li>
+		<li>Helping Code for Boulder with goals setting and achievement</li>
+	</ul>
+	<p>At Code for Boulder, we do our best to find a role/project that fits your profile and our goals and therefore would love to meet you and know more about you.</p>
+	<p>You can find more information about our weekly Wednesday night meeting on <a href="https://www.meetup.com/CodeForBoulder/">meetup.com</a> or get in touch with us through <a href="https://codeforboulder.herokuapp.com/">Slack</a> and <a href="https://github.com/CodeForBoulder">Github</a>.</p>
+
+</section>
+
+<section id="projects">
+	<h2>Projects</h2>
+	<p>Projects are actionable ideas brought to life through collaboration in which everyone has the talents to contribute to. From idea pitching to live product, we use an agile process where a product champion and tech lead will build and manage the team and tasks necessary to the project completion.</p>
+	<h3>Current projects</h3>
+
+	<ul>
+		<!-- Existing fields are pictureLink, title, description, team, partner, repoLink, stack, needed. -->
+		{% for current-project in site.data.current-projects %}
+			<li>
+				{% if current-project.pictureLink %}
+					<img class="left-half" src="{{ current-project.pictureLink | absolute_url }}">
+				{% endif %}
+				{% if current-project.title %}
+					<div>
+						<h4>{{ current-project.title }}</h4>
+						<span class="project-description">{{ current-project.description }}</span>
+					</div>
+				{% endif %}
+				{% if current-project.team %}
+					<div class="margin-top">
+						<h4 class="inline">Team</h4>
+						<span class="project-team">
+							{{ current-project.team | array_to_sentence_string }}
+						</span>
+					</div>
+				{% endif %}
+				{% if current-project.partner %}
+					<div>
+						<h4 class="inline">Partner</h4>
+						<span class="project-partner">{{ current-project.partner }}</span>
+					</div>
+				{% endif %}
+				{% if current-project.stack %}
+					<div>
+						<h4 class="inline">Stack</h4>
+						<span class="project-stack">{{ current-project.stack }}</span>
+					</div>
+				{% endif %}
+				{% if current-project.needed %}
+					<div>
+						<h4 class="inline">NEEDED</h4>
+						<span class="project-stack">{{ current-project.needed }} <a href="mailto:hi@codeforboulder.org?Subject=Helpingspecificproject">Contact us</a> if you are interested.</span>
+					</div>
+				{% endif %}
+				{% if current-project.title %}
+					<a class="view" href="{{ current-project.repoLink }}">View project repo</a>
+				{% endif %}
+			</li>
+		{% endfor %}
+	</ul>	
+	
+	<h3>Featured projects</h3>
+	<ul>
+		<!-- Existing fields are pictureLink, title, description, team, partner, liveLink, stack, needed. -->
+				{% for featured-project in site.data.featured-projects %}
+			<li>
+				{% if featured-project.pictureLink %}
+					<img class="left-half" src="{{ featured-project.pictureLink | absolute_url }}">
+				{% endif %}
+				{% if featured-project.title %}
+					<div>
+						<h4>{{ featured-project.title }}</h4>
+						<span class="project-description">{{ featured-project.description }}</span>
+					</div>
+				{% endif %}
+				{% if featured-project.team %}
+					<div class="margin-top">
+						<h4 class="inline">Team</h4>
+						<span class="project-team">
+							{{ featured-project.team | array_to_sentence_string }}
+						</span>
+					</div>
+				{% endif %}
+				{% if featured-project.partner %}
+					<div>
+						<h4 class="inline">Partner</h4>
+						<span class="project-partner">{{ featured-project.partner }}</span>
+					</div>
+				{% endif %}
+				{% if featured-project.stack %}
+					<div>
+						<h4 class="inline">Stack</h4>
+						<span class="project-stack">{{ featured-project.stack }}</span>
+					</div>
+				{% endif %}
+				{% if featured-project.needed %}
+					<div>
+						<h4 class="inline">NEEDED</h4>
+						<span class="project-stack">{{ featured-project.needed }} <a href="mailto:hi@codeforboulder.org?Subject=Helpingspecificproject">Contact us</a> if you are interested.</span>
+					</div>
+				{% endif %}
+				{% if featured-project.title %}
+					<a class="view" href="{{ featured-project.liveLink }}">View live project</a>
+				{% endif %}
+			</li>
+		{% endfor %}
+	</ul>
+</section>
+
+<section id="contact-us">
+	<h2>Contact us</h2>
+	<p>We'd love to get in touch with you, talk about your interests, motivations and how you can contribute to Code for Boulder. If <a href="https://www.meetup.com/CodeForBoulder/">meetup</a> and <a href="https://codeforboulder.herokuapp.com/">Slack</a> are not good options, feel free to email us at <a href="mailto:hi@codeforboulder.org?Subject=Hello">hi[at]codeforboulder.org</a> or contact our <a href="https://www.meetup.com/CodeForBoulder/members/?op=leaders">organizers</a> individually.</p>
+</section>	
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script>
+    $(function() {
+        var getEvents = "https://api.meetup.com/CodeForBoulder/events?photo-host=public&page=3&sig_id=6047051&fields=%27name%27&sig=258fc3e7a3c6778596104fdc0b4642b9e92095c5";
+        var events = document.getElementById("events");
+        $.getJSON(getEvents + "&callback=?", function(response) {
+            if (response.status && response.status.match(/^200/) == null) {
+                console.log("Meetup API is unresponsive :(");
+            } 
+            else {
+            	var data = response.data;
+            	var dataLength = response.data.length;
+            	var events = $('#meetup-events ol').empty();
+            	var week = ["Sun","Mon","Tues","Wed","Thur","Fri","Sat"];
+            	var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            	$.each(data, function(i) {
+            		var ev = data[i];
+            		var li = $('<li>').appendTo(events);
+            		var a = $('<a>').attr('href', ev.link).appendTo(li);
+            		var name = $('<span>').addClass('event-name').text(ev.name).appendTo(a);
+            		var eventDate = new Date(ev.time);
+            		var hour = eventDate.getHours();
+            		var ampm = 'am';
+
+            		if (hour == 12) {
+            			hour = 12;
+            			ampm = 'pm';
+            		} 
+            		else if (hour > 12) {
+            			hour -= 12;
+            			ampm = 'pm';
+            		}
+            		var time = $('<span>').addClass('event-time').text(week[eventDate.getDay()] + " " + eventDate.getDate() + " " + months[eventDate.getMonth()] + " " + eventDate.getFullYear() + " at " + hour + ":" + eventDate.getMinutes() + ampm).appendTo(a);
+            		var venue = ev.venue.name + ' at ' + ev.venue.address_1;
+            		var location = $('<span>').addClass('event-location').text(venue).appendTo(a);
+            	});
+    		}
+    	});
+    });
+</script>
