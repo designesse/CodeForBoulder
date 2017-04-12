@@ -21,8 +21,8 @@ description: > # this means to ignore newlines until "baseurl:"
   and more who are working for a better Boulder, a better America and a better tomorrow.
   We are the Boulder brigade of Code for America, a non-partisan, non-political organization working to create low-risk settings 
   for innovation between citizens and government.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://designesse.github.io/codeforboulder" # the base hostname & protocol for your site, e.g. http://example.com
+# baseurl: "" # the subpath of your site, e.g. /blog
+# url: "http://designesse.github.io/codeforboulderg" # the base hostname & protocol for your site, e.g. http://example.com
 logo: "/assets/img/CodeForBoulder-Logo-with-Name.png"
 
 # Build settings
