@@ -1,0 +1,188 @@
+body {
+  color: #815155;
+  font-size: 20px;
+  font-family: sans-serif;
+  margin: 0; }
+
+a:hover {
+  color: #a57075; }
+
+a:visited {
+  color: #573739; }
+
+a.view {
+  background-color: #ebdcca;
+  display: inline-block;
+  font-size: .9em;
+  font-weight: bold;
+  margin: 1em 0;
+  padding: .5em;
+  text-transform: uppercase; }
+  a.view::after {
+    content: " >"; }
+
+header {
+  background-color: #fff;
+  border-bottom: 3px solid #a57075; }
+  header nav {
+    float: right; }
+  header ol {
+    margin-top: 1.6em; }
+    header ol li {
+      display: inline; }
+      header ol li a {
+        color: #815155;
+        font-weight: bold;
+        margin-right: 1em;
+        text-decoration: none;
+        text-transform: uppercase; }
+
+#intro h1 {
+  color: black; }
+#intro p {
+  font-size: 1.1em;
+  font-weight: bold; }
+
+footer {
+  background-color: #ebdcca;
+  border-top: 3px solid #a57075;
+  overflow: hidden;
+  padding-bottom: 3em; }
+  footer div {
+    float: left;
+    display: inline-block;
+    text-align: center;
+    width: 33%; }
+  footer li {
+    display: block; }
+  footer ol {
+    -webkit-padding-start: 0; }
+
+.menu-logo {
+  margin: 1em;
+  width: 120px; }
+
+section {
+  padding: 1em 7em; }
+
+p + ul {
+  margin-top: -0.8em; }
+
+.right-sidebar {
+  float: right;
+  font-size: .9em;
+  margin-left: 1.5em;
+  width: 40%; }
+
+h2 {
+  margin-bottom: 1.5em;
+  margin-top: 2em;
+  text-align: center;
+  text-transform: uppercase; }
+
+#intro {
+  background-image: url("http://react.dev/CodeForBoulder/_site/_pages/boulder-mountains-houses.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 3em;
+  position: relative; }
+  #intro #slogan, #intro p {
+    background: rgba(255, 255, 255, 0.8);
+    margin: 1em auto;
+    padding: 1em; }
+  #intro #slogan {
+    width: 35%; }
+    #intro #slogan h1 {
+      text-align: center; }
+    #intro #slogan img {
+      display: block;
+      width: 100%; }
+  #intro p {
+    width: 70%; }
+
+#contact-us {
+  margin-bottom: 3em; }
+
+a.background-caption {
+  bottom: 0;
+  color: #ccc;
+  font-size: .8em;
+  position: absolute;
+  right: 0; }
+
+.box {
+  background-color: #ebdcca;
+  padding: 1em; }
+  .box h3 {
+    -webkit-margin-before: 0;
+    color: #573739;
+    font-size: 1.1em; }
+
+img.inline.meetup {
+  height: 35px;
+  margin-bottom: -.5em;
+  margin-left: .8em; }
+img.inline.slack {
+  height: 50px;
+  margin-bottom: -.77em;
+  margin-left: .1em; }
+img.inline.github {
+  height: 80px;
+  margin-bottom: -2em;
+  margin-left: .7em;
+  margin-top: 1em; }
+img.left-half {
+  float: left;
+  margin-right: 1em;
+  width: 45%; }
+
+.inline {
+  display: inline; }
+
+.half {
+  width: 50%; }
+
+.left {
+  float: left; }
+
+.margin-top {
+  margin-top: 1em; }
+
+#events div {
+  border-top: 3px solid #a57075;
+  margin-bottom: 1.5em; }
+#events div:first-child {
+  border: none; }
+
+#meetup-events ol {
+  -webkit-margin-before: 0;
+  -webkit-padding-start: 0;
+  list-style-type: none; }
+  #meetup-events ol li {
+    margin: .7em 0; }
+    #meetup-events ol li a {
+      color: #815155;
+      text-decoration: none; }
+    #meetup-events ol li span {
+      display: block; }
+      #meetup-events ol li span.event-name {
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: .9em; }
+      #meetup-events ol li span.event-time, #meetup-events ol li span.event-location {
+        color: #a57075; }
+
+#projects ul {
+  -webkit-padding-start: 0px; }
+  #projects ul h4 {
+    -webkit-margin-after: 0;
+    -webkit-margin-before: 0; }
+    #projects ul h4.inline {
+      display: inline; }
+      #projects ul h4.inline::after {
+        content: ": ";
+        color: #815155; }
+  #projects ul li {
+    list-style-type: none;
+    margin-bottom: 2em;
+    overflow: hidden; }
