@@ -20,7 +20,7 @@ body {
 
 a:hover { color: $light-text-color; }
 a:visited { color: $dark-text-color; }
-a.view { 
+a.view {
     background-color: #ebdcca;
 	display: inline-block;
     font-size: .9em;
@@ -90,7 +90,7 @@ h2 {
 }
 
 #intro {
-	background-image: url("{{ site.url }}/_pages/boulder-mountains-houses.jpg");
+	background-image: url("{{ site.github.url }}/_pages/boulder-mountains-houses.jpg");
     background-position: center center;
 	background-repeat: no-repeat;
 	padding: 3em;
