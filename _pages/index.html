@@ -63,10 +63,10 @@ layout: default
 
 	<ul>
 		<!-- Existing fields are pictureLink, title, description, team, partner, repoLink, stack, needed. -->
-		{% for current-project in site.data.current-projects %}
+		{% for current-project in site.current-projects %}
 			<li>
 				{% if current-project.pictureLink %}
-					<img class="left-half" src="{{ current-project.pictureLink | absolute_url }}">
+				<img class="left-half" src="{{ site.url }}/current-projects/{{ current-project.pictureLink }}" alt="Project: {{current-project.title}}">
 				{% endif %}
 				{% if current-project.title %}
 					<div>
@@ -110,10 +110,10 @@ layout: default
 	<h3>Featured projects</h3>
 	<ul>
 		<!-- Existing fields are pictureLink, title, description, team, partner, liveLink, stack, needed. -->
-				{% for featured-project in site.data.featured-projects %}
+				{% for featured-project in site.featured-projects %}
 			<li>
 				{% if featured-project.pictureLink %}
-					<img class="left-half" src="{{ featured-project.pictureLink | absolute_url }}">
+				    <img class="left-half" src="{{ site.url }}/featured-projects/{{ featured-project.pictureLink }}" alt="Project: {{featured-project.title}}">
 				{% endif %}
 				{% if featured-project.title %}
 					<div>
