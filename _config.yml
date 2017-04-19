@@ -38,6 +38,8 @@ collections:
   pages:
     output: true
     permalink: /:path/
+  current-projects:
+  featured-projects:
 
 sass:
   sass_dir: assets/_sass
